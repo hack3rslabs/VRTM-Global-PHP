@@ -67,11 +67,9 @@ $year = date('Y');
         <span style="color:var(--text-secondary);">•</span>
         <span>CIN: U62013AP2025PTC119531</span>
       </div>
-      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0.6rem;color:var(--text-secondary);font-size:0.85rem;">
-        <span>&copy; <?= $year ?> VRTM Global Technology. All rights reserved.</span>
-        <span style="opacity:0.4;">•</span>
-        <span>Built with <a href="https://techwell.co.in" target="_blank" rel="noopener noreferrer" style="color:var(--accent-teal);font-weight:600;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#00C6FF'" onmouseout="this.style.color='var(--accent-teal)'">Techwell</a></span>
-      </div>
+      <span style="color:var(--text-secondary);font-size:0.85rem;">
+        &copy; <?= $year ?> VRTM Global Technology. All rights reserved.
+      </span>
     </div>
   </div>
 </footer>
