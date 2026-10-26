@@ -86,26 +86,12 @@ require_once __DIR__ . '/includes/header.php';
   <div class="leadership-grid">
     <!-- Thirupathi Vijay Kumar -->
     <div class="leadership-card fade-in-up delay-100">
-      <div class="team-photo-dummy-wrap">
-        <div class="team-avatar-wrapper">
-          <div class="team-avatar-inner">
-            <svg class="dummy-silhouette" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60" cy="60" r="58" fill="#112240"/>
-              <circle cx="60" cy="46" r="22" fill="#8892B0" fill-opacity="0.35"/>
-              <path d="M22 104 C22 80 38 70 60 70 C82 70 98 80 98 104 Z" fill="#8892B0" fill-opacity="0.35"/>
-            </svg>
-            <span class="dummy-initials-badge">TVK</span>
-            <img src="/images/team/thirupathi_vijay_kumar.jpg" alt="Thirupathi Vijay Kumar" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
-          </div>
-          <div class="dummy-camera-badge" title="Photo Space">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-              <circle cx="12" cy="13" r="4"></circle>
-            </svg>
-          </div>
-        </div>
-        <div class="dummy-photo-label">
-          <span class="dummy-dashed-ring">Photo Space</span>
+      <div class="team-avatar-wrapper">
+        <div class="team-avatar-inner">
+          <svg class="team-avatar-placeholder" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+          <img src="/images/team/thirupathi_vijay_kumar.jpg" alt="Thirupathi Vijay Kumar" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
         </div>
       </div>
       <span class="team-badge">Executive Leadership</span>
@@ -118,26 +104,12 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Muddeti Srinivasa Rao -->
     <div class="leadership-card fade-in-up delay-200">
-      <div class="team-photo-dummy-wrap">
-        <div class="team-avatar-wrapper">
-          <div class="team-avatar-inner">
-            <svg class="dummy-silhouette" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60" cy="60" r="58" fill="#112240"/>
-              <circle cx="60" cy="46" r="22" fill="#8892B0" fill-opacity="0.35"/>
-              <path d="M22 104 C22 80 38 70 60 70 C82 70 98 80 98 104 Z" fill="#8892B0" fill-opacity="0.35"/>
-            </svg>
-            <span class="dummy-initials-badge">MSR</span>
-            <img src="/images/team/muddeti_srinivasa_rao.jpg" alt="Muddeti Srinivasa Rao" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
-          </div>
-          <div class="dummy-camera-badge" title="Photo Space">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-              <circle cx="12" cy="13" r="4"></circle>
-            </svg>
-          </div>
-        </div>
-        <div class="dummy-photo-label">
-          <span class="dummy-dashed-ring">Photo Space</span>
+      <div class="team-avatar-wrapper">
+        <div class="team-avatar-inner">
+          <svg class="team-avatar-placeholder" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+          <img src="/images/team/muddeti_srinivasa_rao.jpg" alt="Muddeti Srinivasa Rao" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
         </div>
       </div>
       <span class="team-badge">Board of Directors</span>
@@ -150,26 +122,12 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Director -->
     <div class="leadership-card fade-in-up delay-300">
-      <div class="team-photo-dummy-wrap">
-        <div class="team-avatar-wrapper">
-          <div class="team-avatar-inner">
-            <svg class="dummy-silhouette" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="60" cy="60" r="58" fill="#112240"/>
-              <circle cx="60" cy="46" r="22" fill="#8892B0" fill-opacity="0.35"/>
-              <path d="M22 104 C22 80 38 70 60 70 C82 70 98 80 98 104 Z" fill="#8892B0" fill-opacity="0.35"/>
-            </svg>
-            <span class="dummy-initials-badge">DIR</span>
-            <img src="/images/team/director.jpg" alt="Director" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
-          </div>
-          <div class="dummy-camera-badge" title="Photo Space">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-              <circle cx="12" cy="13" r="4"></circle>
-            </svg>
-          </div>
-        </div>
-        <div class="dummy-photo-label">
-          <span class="dummy-dashed-ring">Photo Space</span>
+      <div class="team-avatar-wrapper">
+        <div class="team-avatar-inner">
+          <svg class="team-avatar-placeholder" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+          </svg>
+          <img src="/images/team/director.jpg" alt="Director" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
         </div>
       </div>
       <span class="team-badge">Board of Directors</span>

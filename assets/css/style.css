@@ -923,17 +923,17 @@ input[type="checkbox"] {
 .leadership-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 2.5rem;
-  margin-bottom: 5rem;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .leadership-card {
   text-align: center;
-  padding: 3rem 2rem;
-  background: linear-gradient(145deg, rgba(17, 34, 64, 0.85) 0%, rgba(10, 25, 47, 0.95) 100%);
+  padding: 2.2rem 1.6rem;
+  background: linear-gradient(145deg, rgba(17, 34, 64, 0.7) 0%, rgba(10, 25, 47, 0.9) 100%);
   border: 1px solid rgba(0, 198, 255, 0.15);
-  border-radius: 16px;
+  border-radius: 14px;
   position: relative;
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -942,32 +942,26 @@ input[type="checkbox"] {
 }
 
 .leadership-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: var(--accent-teal);
-  box-shadow: 0 15px 35px rgba(0, 198, 255, 0.15);
-}
-
-.team-photo-dummy-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 198, 255, 0.18);
 }
 
 .team-avatar-wrapper {
-  width: 140px;
-  height: 140px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  padding: 4px;
+  padding: 3px;
   background: var(--brand-gradient);
+  margin-bottom: 1.2rem;
   position: relative;
-  box-shadow: 0 0 25px rgba(0, 198, 255, 0.35);
+  box-shadow: 0 0 18px rgba(0, 198, 255, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .leadership-card:hover .team-avatar-wrapper {
-  transform: scale(1.06);
-  box-shadow: 0 0 35px rgba(100, 255, 218, 0.6);
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(100, 255, 218, 0.45);
 }
 
 .team-avatar-inner {
@@ -980,16 +974,20 @@ input[type="checkbox"] {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  border: 2px dashed rgba(100, 255, 218, 0.45);
+  border: 1.5px solid rgba(100, 255, 218, 0.35);
 }
 
-.dummy-silhouette {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
+.team-avatar-placeholder {
+  width: 46px;
+  height: 46px;
+  color: var(--accent-teal);
+  opacity: 0.55;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.leadership-card:hover .team-avatar-placeholder {
+  opacity: 0.9;
+  transform: scale(1.05);
 }
 
 .team-photo-img {
@@ -1000,92 +998,41 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
   display: none;
-}
-
-.dummy-initials-badge {
-  position: relative;
-  z-index: 1;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #E6F1FF;
-  background: rgba(10, 25, 47, 0.88);
-  border: 1px solid rgba(100, 255, 218, 0.5);
-  padding: 0.25rem 0.8rem;
-  border-radius: 20px;
-  letter-spacing: 2px;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.dummy-camera-badge {
-  position: absolute;
-  bottom: 4px;
-  right: 4px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #00C6FF, #64FFDA);
-  color: #0A192F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  z-index: 3;
-}
-
-.dummy-photo-label {
-  margin-top: 0.6rem;
-}
-
-.dummy-dashed-ring {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--accent-teal);
-  background: rgba(100, 255, 218, 0.08);
-  border: 1px dashed rgba(100, 255, 218, 0.4);
-  padding: 0.2rem 0.8rem;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
 }
 
 .team-badge {
   display: inline-block;
-  background: rgba(100, 255, 218, 0.1);
+  background: rgba(100, 255, 218, 0.08);
   color: var(--accent-teal);
-  border: 1px solid rgba(100, 255, 218, 0.25);
-  padding: 0.35rem 1rem;
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  padding: 0.25rem 0.85rem;
   border-radius: 50px;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .team-name {
   color: var(--text-primary);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
 }
 
 .team-role {
   color: var(--accent-teal);
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 600;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.75rem;
 }
 
 .team-desc {
   color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 @media (max-width: 992px) {
