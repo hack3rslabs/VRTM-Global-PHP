@@ -86,10 +86,26 @@ require_once __DIR__ . '/includes/header.php';
   <div class="leadership-grid">
     <!-- Thirupathi Vijay Kumar -->
     <div class="leadership-card fade-in-up delay-100">
-      <div class="team-avatar-wrapper">
-        <div class="team-avatar-inner">
-          <span class="team-avatar-initials">TVK</span>
-          <img src="/images/team/thirupathi_vijay_kumar.jpg" alt="Thirupathi Vijay Kumar" onerror="this.style.display='none'" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" />
+      <div class="team-photo-dummy-wrap">
+        <div class="team-avatar-wrapper">
+          <div class="team-avatar-inner">
+            <svg class="dummy-silhouette" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" fill="#112240"/>
+              <circle cx="60" cy="46" r="22" fill="#8892B0" fill-opacity="0.35"/>
+              <path d="M22 104 C22 80 38 70 60 70 C82 70 98 80 98 104 Z" fill="#8892B0" fill-opacity="0.35"/>
+            </svg>
+            <span class="dummy-initials-badge">TVK</span>
+            <img src="/images/team/thirupathi_vijay_kumar.jpg" alt="Thirupathi Vijay Kumar" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
+          </div>
+          <div class="dummy-camera-badge" title="Photo Space">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="dummy-photo-label">
+          <span class="dummy-dashed-ring">Photo Space</span>
         </div>
       </div>
       <span class="team-badge">Executive Leadership</span>
@@ -102,10 +118,26 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Muddeti Srinivasa Rao -->
     <div class="leadership-card fade-in-up delay-200">
-      <div class="team-avatar-wrapper">
-        <div class="team-avatar-inner">
-          <span class="team-avatar-initials">MSR</span>
-          <img src="/images/team/muddeti_srinivasa_rao.jpg" alt="Muddeti Srinivasa Rao" onerror="this.style.display='none'" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" />
+      <div class="team-photo-dummy-wrap">
+        <div class="team-avatar-wrapper">
+          <div class="team-avatar-inner">
+            <svg class="dummy-silhouette" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" fill="#112240"/>
+              <circle cx="60" cy="46" r="22" fill="#8892B0" fill-opacity="0.35"/>
+              <path d="M22 104 C22 80 38 70 60 70 C82 70 98 80 98 104 Z" fill="#8892B0" fill-opacity="0.35"/>
+            </svg>
+            <span class="dummy-initials-badge">MSR</span>
+            <img src="/images/team/muddeti_srinivasa_rao.jpg" alt="Muddeti Srinivasa Rao" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
+          </div>
+          <div class="dummy-camera-badge" title="Photo Space">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="dummy-photo-label">
+          <span class="dummy-dashed-ring">Photo Space</span>
         </div>
       </div>
       <span class="team-badge">Board of Directors</span>
@@ -118,10 +150,26 @@ require_once __DIR__ . '/includes/header.php';
 
     <!-- Director -->
     <div class="leadership-card fade-in-up delay-300">
-      <div class="team-avatar-wrapper">
-        <div class="team-avatar-inner">
-          <span class="team-avatar-initials">DIR</span>
-          <img src="/images/team/director.jpg" alt="Director" onerror="this.style.display='none'" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" />
+      <div class="team-photo-dummy-wrap">
+        <div class="team-avatar-wrapper">
+          <div class="team-avatar-inner">
+            <svg class="dummy-silhouette" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="58" fill="#112240"/>
+              <circle cx="60" cy="46" r="22" fill="#8892B0" fill-opacity="0.35"/>
+              <path d="M22 104 C22 80 38 70 60 70 C82 70 98 80 98 104 Z" fill="#8892B0" fill-opacity="0.35"/>
+            </svg>
+            <span class="dummy-initials-badge">DIR</span>
+            <img src="/images/team/director.jpg" alt="Director" class="team-photo-img" onerror="this.style.display='none'" onload="this.style.display='block'; this.previousElementSibling.style.display='none';" />
+          </div>
+          <div class="dummy-camera-badge" title="Photo Space">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <circle cx="12" cy="13" r="4"></circle>
+            </svg>
+          </div>
+        </div>
+        <div class="dummy-photo-label">
+          <span class="dummy-dashed-ring">Photo Space</span>
         </div>
       </div>
       <span class="team-badge">Board of Directors</span>
