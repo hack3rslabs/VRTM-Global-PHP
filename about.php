@@ -75,6 +75,64 @@ require_once __DIR__ . '/includes/header.php';
     </div>
   </div>
 
+  <!-- Leadership Team Section -->
+  <div style="text-align:center;margin-top:5rem;margin-bottom:1rem;" class="fade-in-up">
+    <h2 style="color:var(--text-primary);font-size:2.2rem;margin-bottom:1rem;">Board of Directors &amp; Leadership</h2>
+    <p style="color:var(--text-secondary);max-width:700px;margin:0 auto;font-size:1.1rem;">
+      The visionary leaders guiding VRTM Global Technology towards engineering excellence, strategic growth, and world-class digital innovation.
+    </p>
+  </div>
+
+  <div class="leadership-grid">
+    <!-- Thirupathi Vijay Kumar -->
+    <div class="leadership-card fade-in-up delay-100">
+      <div class="team-avatar-wrapper">
+        <div class="team-avatar-inner">
+          <span class="team-avatar-initials">TVK</span>
+          <img src="/images/team/thirupathi_vijay_kumar.jpg" alt="Thirupathi Vijay Kumar" onerror="this.style.display='none'" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" />
+        </div>
+      </div>
+      <span class="team-badge">Executive Leadership</span>
+      <h3 class="team-name">Thirupathi Vijay Kumar</h3>
+      <div class="team-role">Founder &amp; CEO</div>
+      <p class="team-desc">
+        Spearheading the company's strategic vision, core architecture, and client partnerships across India and global markets.
+      </p>
+    </div>
+
+    <!-- Muddeti Srinivasa Rao -->
+    <div class="leadership-card fade-in-up delay-200">
+      <div class="team-avatar-wrapper">
+        <div class="team-avatar-inner">
+          <span class="team-avatar-initials">MSR</span>
+          <img src="/images/team/muddeti_srinivasa_rao.jpg" alt="Muddeti Srinivasa Rao" onerror="this.style.display='none'" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" />
+        </div>
+      </div>
+      <span class="team-badge">Board of Directors</span>
+      <h3 class="team-name">Muddeti Srinivasa Rao</h3>
+      <div class="team-role">Managing Director</div>
+      <p class="team-desc">
+        Driving corporate governance, operational excellence, and enterprise expansion for VRTM Global Technology.
+      </p>
+    </div>
+
+    <!-- Director -->
+    <div class="leadership-card fade-in-up delay-300">
+      <div class="team-avatar-wrapper">
+        <div class="team-avatar-inner">
+          <span class="team-avatar-initials">DIR</span>
+          <img src="/images/team/director.jpg" alt="Director" onerror="this.style.display='none'" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;" />
+        </div>
+      </div>
+      <span class="team-badge">Board of Directors</span>
+      <h3 class="team-name">Director</h3>
+      <div class="team-role">Director</div>
+      <p class="team-desc">
+        Providing strategic advisory, industry governance, and board oversight to support sustainable technological growth.
+      </p>
+    </div>
+  </div>
+
 </div>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
