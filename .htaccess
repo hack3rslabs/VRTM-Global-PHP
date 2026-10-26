@@ -1,0 +1,92 @@
+Options -Indexes
+
+# PHP settings
+php_flag display_errors Off
+php_flag log_errors On
+
+# ============================================================
+# REWRITE RULES
+# ============================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Force HTTPS (uncomment on live server)
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # --- CLEAN URLs: remove .php extension from the browser bar ---
+  # If someone types /contact, serve contact.php silently
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}.php -f
+  RewriteRule ^([^/]+)/?$ $1.php [L]
+
+  # Redirect .php extension requests to clean URL (301)
+  RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+  RewriteRule ^ /%1 [NC,L,R=301]
+
+  # Legacy React SPA routes → map to PHP pages
+  RewriteRule ^services/?$  /services.php  [L]
+  RewriteRule ^about/?$     /about.php     [L]
+  RewriteRule ^sectors/?$   /sectors.php   [L]
+  RewriteRule ^careers/?$   /careers.php   [L]
+  RewriteRule ^contact/?$   /contact.php   [L]
+  RewriteRule ^faq/?$       /faq.php       [L]
+  RewriteRule ^privacy/?$   /privacy.php   [L]
+  RewriteRule ^terms/?$     /terms.php     [L]
+
+</IfModule>
+
+# ============================================================
+# CUSTOM ERROR PAGES
+# ============================================================
+ErrorDocument 404 /404.php
+ErrorDocument 500 /404.php
+
+# ============================================================
+# SECURITY HEADERS
+# ============================================================
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+</IfModule>
+
+# Block direct access to includes/ directory
+<IfModule mod_authz_core.c>
+  <Directory "/includes">
+    Require all denied
+  </Directory>
+</IfModule>
+
+# Block .php files inside includes from direct browser access
+<FilesMatch "^includes/.*\.php$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ============================================================
+# GZIP COMPRESSION
+# ============================================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript text/javascript application/json image/svg+xml
+</IfModule>
+
+# ============================================================
+# BROWSER CACHING (1 year for images, 1 month for CSS/JS)
+# ============================================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg    "access plus 1 year"
+    ExpiresByType image/jpeg   "access plus 1 year"
+    ExpiresByType image/gif    "access plus 1 year"
+    ExpiresByType image/png    "access plus 1 year"
+    ExpiresByType image/webp   "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css     "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
